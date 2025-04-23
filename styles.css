@@ -6,8 +6,8 @@
     --card-bg: #ffffff;
     --accent-color: #2c3e50;
     --border-color: #dcdcdc;
-    --font-primary: 'Inter', sans-serif;
-    --font-header: 'Dancing Script', cursive;
+    --font-primary: 'Playfair Display', serif;
+    --font-header: 'Playfair Display', serif;
 }
 
 /* Font Import */
