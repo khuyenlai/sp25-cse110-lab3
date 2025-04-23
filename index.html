@@ -3,133 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pomodoro Timer First Brainstorm</title>
+  <title>POMODORO TIMER FIRST BRAINSTORM</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <h1><strong>Pomodoro Timer First Brainstorm</strong></h1>
-    <h2><em>Brainstorming Session</em></h2>
-    <h3><i>Date: April 15, 2025</i></h3>
-  </header>
+  <div class="container">
+    <header class="header">
+      <h1><strong>Pomodoro Timer First Brainstorm</strong></h1>
+      <h2><em>Brainstorming Session</em></h2>
+      <h3><i>Date: April 15, 2025</i></h3>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="#agenda">Agenda</a></li>
-      <li><a href="#attendance">Attendance</a></li>
-      <li><a href="#form">Feedback Form</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="agenda">
-      <h2>Agenda</h2>
-      <ol>
-        <li><b>Define MVP features</b></li>
-        <li>Design wireframes</li>
-        <li>Assign roles</li>
-      </ol>
-    </section>
-
-    <section id="attendance">
-      <h2>Attendance</h2>
+    <nav>
       <ul>
-        <li><span>Alex</span></li>
-        <li><span>Jamie</span></li>
-        <li><span>Riley</span></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#form">Feedback Form</a></li>
       </ul>
-    </section>
+    </nav>
 
-    <section>
-      <h2>Meeting Notes</h2>
-      <p><strong>Important:</strong> The timer should allow custom session lengths.<br>
-      Please also include a notification sound.</p>
-      <hr>
-      <div>
-        <p><span></span></p>
-      </div>
-    </section>
+    <main>
+      <section id="agenda">
+        <h2 class="section-title">Agenda</h2>
+        <ol>
+          <li><b>Define MVP features</b></li>
+          <li>Design wireframes</li>
+          <li>Assign roles</li>
+        </ol>
+      </section>
 
-    <section>
-      <h2>Architecture Diagram</h2>
-      <img src="stopwatchicon.jpg" alt="Diagram of timer design" width="300">
-    </section>
+      <section id="unfinished">
+        <h2 class="section-title">Unfinished Business</h2>
+        <ul>
+          <li>Finalize tech stack</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Audio Recording</h2>
-      <audio controls>
-        <source src="Audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </section>
+      <section id="new">
+        <h2 class="section-title">New Business</h2>
+        <ul>
+          <li>Decide on hosting service</li>
+          <li>Confirm next meeting time</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Video Recording</h2>
-      <video width="320" height="240" controls>
-        <source src="Video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
+      <section id="attendance">
+        <h2 class="section-title">Attendance</h2>
+        <ul>
+          <li><span>Alex</span></li>
+          <li><span>Jamie</span></li>
+          <li><span>Riley</span></li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Summary</h2>
-      <details>
-        <summary>Click to view summary</summary>
-        <p>We discussed the Pomodoro Timer features and defined initial design tasks.</p>
-      </details>
-    </section>
+      <section>
+        <h2 class="section-title">Meeting Notes</h2>
+        <p><strong>Important:</strong> The timer should allow custom session lengths.<br>
+        Please also include a notification sound.</p>
+        <hr>
+        <div><p><span>Other comments here...</span></p></div>
+      </section>
 
-    <section id="form">
-      <h2>Feedback Form</h2>
-      <form>
-        <fieldset>
-          <legend>Meeting Feedback</legend>
+      <section>
+        <h2 class="section-title">Architecture Diagram</h2>
+        <img src="stopwatchicon.jpg" alt="Diagram of timer design" width="300">
+      </section>
 
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br><br>
+      <section>
+        <h2 class="section-title">Audio Recording</h2>
+        <audio controls>
+          <source src="Audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </section>
 
-          <label for="date">Meeting Date:</label>
-          <input type="date" id="date" name="date"><br><br>
+      <section>
+        <h2 class="section-title">Video Recording</h2>
+        <video width="320" height="240" controls>
+          <source src="Video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
 
-          <p>Rate this meeting:</p>
-          <input type="radio" id="great" name="rating" value="great">
-          <label for="great">Great</label>
-          <input type="radio" id="okay" name="rating" value="okay">
-          <label for="okay">Okay</label>
-          <input type="radio" id="bad" name="rating" value="bad">
-          <label for="bad">Bad</label><br><br>
+      <section>
+        <h2 class="section-title">Summary</h2>
+        <details>
+          <summary>Click to view summary</summary>
+          <p>We discussed Pomodoro Timer features and defined initial design tasks.</p>
+        </details>
+      </section>
 
-          <label><input type="checkbox" name="followup"> Request follow-up email</label><br><br>
+      <section id="form">
+        <h2 class="section-title">Feedback Form</h2>
+        <form>
+          <fieldset>
+            <legend>Meeting Feedback</legend>
 
-          <label for="comments">Additional comments:</label><br>
-          <textarea id="comments" name="comments" rows="3" cols="40"></textarea><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
 
-          <label for="topic">Favorite feature:</label>
-          <input list="features" id="topic" name="topic">
-          <datalist id="features">
-            <option value="Custom Session">
-            <option value="Sound Alert">
-            <option value="Progress Tracker">
-          </datalist><br><br>
+            <label for="date">Meeting Date:</label>
+            <input type="date" id="date" name="date"><br><br>
 
-          <label for="role">Your role:</label>
-          <select id="role" name="role">
-            <option value="student">Student</option>
-            <option value="developer">Developer</option>
-            <option value="designer">Designer</option>
-          </select><br><br>
+            <p>Rate this meeting:</p>
+            <input type="radio" id="great" name="rating" value="great">
+            <label for="great">Great</label>
+            <input type="radio" id="okay" name="rating" value="okay">
+            <label for="okay">Okay</label>
+            <input type="radio" id="bad" name="rating" value="bad">
+            <label for="bad">Bad</label><br><br>
 
-          <button type="submit">Submit</button>
-        </fieldset>
-      </form>
-    </section>
-  </main>
+            <label><input type="checkbox" name="followup"> Request follow-up email</label><br><br>
 
-  <footer>
-    <p>&copy; 2025 Pomodoro Project Team</p>
-  </footer>
+            <label for="comments">Additional comments:</label><br>
+            <textarea id="comments" name="comments" rows="3" cols="40"></textarea><br><br>
+
+            <label for="topic">Favorite feature:</label>
+            <input list="features" id="topic" name="topic">
+            <datalist id="features">
+              <option value="Custom Session">
+              <option value="Sound Alert">
+              <option value="Progress Tracker">
+            </datalist><br><br>
+
+            <label for="role">Your role:</label>
+            <select id="role" name="role">
+              <option value="student">Student</option>
+              <option value="developer">Developer</option>
+              <option value="designer">Designer</option>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Pomodoro Project Team</p>
+    </footer>
+  </div>
 </body>
 </html>
